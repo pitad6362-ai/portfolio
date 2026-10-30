@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function(){var t;try{t=localStorage.getItem('cv-theme')}catch(e){}
+if(!t)t=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+document.documentElement.setAttribute('data-theme',t);})();
+</script>
+<title>Daniel Pita Vicioso · Currículum</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav aria-label="Principal">
+  <div class="nav-in">
+    <a class="brand" href="#inicio">Daniel Pita</a>
+    <ul class="links" id="menu">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#fortalezas">Fortalezas</a></li>
+      <li><a href="#idiomas">Idiomas</a></li>
+      <li><a href="#educacion">Educación</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#competencias">Competencias</a></li>
+    </ul>
+    <div class="tools">
+      <button class="tbtn" id="langBtn" type="button">EN</button>
+      <button class="tbtn" id="themeBtn" type="button"><span aria-hidden="true">☾</span></button>
+      <button class="burger" id="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section id="inicio">
+    <div class="hero-text">
+      <h1>Daniel Pita Vicioso</h1>
+      <p class="role">Estudiante de SMR</p>
+      <p>Me considero capacitado para el puesto de Consultor de TIC: soy una persona respetuosa y amable, con buen manejo del inglés y de las herramientas ofimáticas.</p>
+      <div class="btns">
+        <a class="btn primary" href="#contacto">Contactar</a>
+        <a class="btn" href="#experiencia">Ver experiencia</a>
+      </div>
+    </div>
+    <div class="portrait" aria-hidden="true">DP</div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <div class="card grid g2">
+      <a class="contact-item" href="mailto:daniel.pita@salesianaslpsjb.es" data-copy="daniel.pita@salesianaslpsjb.es"><span class="ico">✉</span><span><small>Correo</small><strong>daniel.pita@salesianaslpsjb.es</strong></span></a>
+      <a class="contact-item" href="tel:+34685616023" data-copy="685 61 60 23"><span class="ico">☎</span><span><small>Teléfono</small><strong>685 61 60 23</strong></span></a>
+      <div class="contact-item"><span class="ico">⌖</span><span><small>Dirección</small><strong>Calle Padre Claret, n.º 6, Sardina del Sur, Santa Lucía, Gran Canaria</strong></span></div>
+      <div class="contact-item"><span class="ico">🎓</span><span><small>Estudios actuales</small><strong>SMR en Las Palmas San Juan Bosco</strong></span></div>
+    </div>
+    <p class="copy-note" id="copyNote" aria-live="polite">Mantén pulsada la tecla Alt y haz clic en el correo o el teléfono para copiarlos.</p>
+  </section>
+
+  <section id="fortalezas">
+    <h2>Fortalezas</h2>
+    <div class="grid g3">
+      <article class="card strength"><div class="ico">◎</div><h3>Trabajo en equipo</h3><p>Me integro bien en grupos y colaboro para sacar las tareas adelante.</p></article>
+      <article class="card strength"><div class="ico">✦</div><h3>Amable y paciente</h3><p>Trato a las personas con respeto y tengo paciencia para explicar y ayudar.</p></article>
+      <article class="card strength"><div class="ico">▤</div><h3>Herramientas ofimáticas</h3><p>Manejo con soltura Word, Google Docs, Google Presentaciones, Canva y otras.</p></article>
+    </div>
+  </section>
+
+  <section id="idiomas">
+    <h2>Idiomas</h2>
+    <div class="grid g2">
+      <article class="card"><div class="lang-row"><h3>Español</h3><span class="lvl">Nativo</span></div><div class="dots" data-level="5"></div></article>
+      <article class="card"><div class="lang-row"><h3>Inglés</h3><span class="lvl">B1 – B2</span></div><div class="dots" data-level="3"></div></article>
+    </div>
+  </section>
+
+  <section id="educacion">
+    <h2>Educación</h2>
+    <div class="timeline">
+      <article class="card item open">
+        <button aria-expanded="true"><span><h3>Grado medio de SMR</h3><span class="meta">Las Palmas San Juan Bosco · En progreso, próximo a acabar en 2028</span></span><span class="chev">⌄</span></button>
+        <div class="detail"><div><ul><li>Cursando actualmente 1.º de Sistemas Microinformáticos y Redes (SMR).</li></ul></div></div>
+      </article>
+      <article class="card item">
+        <button aria-expanded="false"><span><h3>Graduado con mérito en inglés</h3><span class="meta">Academia Success · República Dominicana</span></span><span class="chev">⌄</span></button>
+        <div class="detail"><div><ul><li>Me gradué en lengua extranjera inglés con méritos.</li></ul></div></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="experiencia">
+    <h2>Experiencia</h2>
+    <div class="timeline">
+      <article class="card item open">
+        <button aria-expanded="true"><span><h3>Estudiante de SMR</h3><span class="meta">Las Palmas San Juan Bosco · Actualidad</span></span><span class="chev">⌄</span></button>
+        <div class="detail"><div><ul><li>Formación en informática y redes.</li><li>Uso de herramientas ofimáticas como Word, Google Docs, Google Presentaciones y Canva.</li></ul></div></div>
+      </article>
+      <article class="card item">
+        <button aria-expanded="false"><span><h3>Creación de un juego en Microsoft Arcade</h3><span class="meta">Proyecto personal</span></span><span class="chev">⌄</span></button>
+        <div class="detail"><div><ul><li>Hice un juego en el que se controla una pelota para conseguir monedas y obtener puntos.</li><li>Los puntos se usan para activar habilidades.</li></ul></div></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="competencias">
+    <h2>Competencias</h2>
+    <div class="tabs" role="group" aria-label="Filtrar competencias">
+      <button class="tab" data-f="all" aria-pressed="true">Todas</button>
+      <button class="tab" data-f="ofimatica" aria-pressed="false">Ofimática</button>
+      <button class="tab" data-f="idiomas" aria-pressed="false">Idiomas</button>
+      <button class="tab" data-f="personales" aria-pressed="false">Personales</button>
+    </div>
+    <div class="card" id="skills">
+      <div class="skill" data-c="ofimatica"><h3>Ofimática y diseño</h3><div class="chips"><span>Word</span><span>Google Docs</span><span>Google Presentaciones</span><span>Canva</span><span>Otras herramientas</span></div></div>
+      <div class="skill" data-c="idiomas"><h3>Idiomas</h3><div class="chips"><span>Español nativo</span><span>Inglés B1 – B2</span></div></div>
+      <div class="skill" data-c="personales"><h3>Personales</h3><div class="chips"><span>Trabajo en equipo</span><span>Respeto</span><span>Amabilidad</span><span>Paciencia</span></div></div>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Daniel Pita Vicioso</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
